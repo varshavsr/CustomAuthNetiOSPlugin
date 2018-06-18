@@ -1,0 +1,17 @@
+{
+  "name": "AuthNetSwift",
+  "version": "0.0.1",
+  "description": "Custom plugin for Authorize.net payment gateway",
+  "cordova": {
+    "id": "com-plugins-authnetswift",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Varsha S Rao",
+  "license": "MIT"
+}

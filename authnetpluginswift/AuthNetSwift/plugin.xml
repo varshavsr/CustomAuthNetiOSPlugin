@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-plugins-authnetswift" version="0.01" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AuthNetSwift</name>
+    <js-module name="AuthNetSwift" src="www/AuthNetSwift.js">
+        <clobbers target="authnetswift" />
+    </js-module>
+    <dependency id="cordova-plugin-add-swift-support" version="^1.7.2"/>
+    <variable name="swift-version" value="4.1" />
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AuthNetSwift">
+                <param name="ios-package" value="AuthNetSwift" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/AuthNetSwift.swift" />
+        <source-file src="src/ios/ViewController.swift" />
+        <source-file src="src/ios/CardTypeManager.swift" />        
+        <source-file src="src/ios/MonthYearPickerView.swift" />
+        <source-file src="src/ios/SkyFloatingLabelTextField.swift" />
+        <source-file src="src/ios/SkyFloatingLabelTextFieldWithIcon.swift" />
+        <source-file src="src/ios/UIColor+Theme.swift" />
+        <source-file src="src/ios/UITextField+fixCaretPosition.swift" />
+        <source-file src="src/ios/Utilities.swift" />
+        
+        <resource-file src="src/ios/CardTypesData.json" />
+        <resource-file src="src/ios/Main.storyboard" />
+        
+        <resource-file src="src/ios/navBackwardArrow.png" />
+        <resource-file src="src/ios/downArrow.png" />
+        <resource-file src="src/ios/checkboxGray.png" />
+        <resource-file src="src/ios/checkboxBlue.png" />
+
+        <source-file src="src/ios/AcceptSDK.framework" target-dir="lib" framework="true" />
+        <framework src="src/ios/AcceptSDK.framework" embed="true" custom="true" />
+        <hook type="after_build" src="hooks/embedframework/addEmbedded.js" />
+    </platform>
+</plugin>
