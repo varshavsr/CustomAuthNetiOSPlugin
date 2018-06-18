@@ -1,0 +1,3 @@
+[submodule "AuthorizeNetSample"]
+	path = AuthorizeNetSample
+	url = https://github.com/varshavsr/AuthorizeNetSample.git
