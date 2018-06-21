@@ -1,6 +1,6 @@
-# CustomAuthNetiOSPlugin
+# CustomAuthNetiOSPlugin: Cordova custom plugin with native swift sdk of Authorize.net.
 
-CustomAuthNetiOSPlugin is a repository with Authorize.net(accept) framwework, Cordova custom plugin & Sample ionic app.
+CustomAuthNetiOSPlugin is a repository with Authorize.net framwework, Cordova custom plugin & Sample ionic app.
 
 ### Tech
 
@@ -9,7 +9,7 @@ CustomAuthNetiOSPlugin uses a number of dependencies to work properly:
 * Ionic
 * AngularJS
 * Swift 4.1
-* Authorization.net-Accept SDK
+* Authorize.Net
 
 ### Installation
 
